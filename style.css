@@ -1316,17 +1316,23 @@ footer {
 @media (min-width: 768px) {
 
     .about-content {
-        flex-direction: row; /* MUDANÇA: Itens voltam a ficar lado a lado */
-        gap: 8rem;
+        flex-direction: row; 
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .about-text {
+        flex: 1;
+    }
+
+    .about-image {
+        order: 0;
+        flex: 1;
     }
 
     .about-content h2{
         font-size: 2rem;
         margin-bottom: 2rem;
-    }
-
-    .about-image {
-        order: 0; /* MUDANÇA: Reseta a ordem para o padrão */
     }
 
     .section-title {
