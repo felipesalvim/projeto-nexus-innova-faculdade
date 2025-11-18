@@ -58,7 +58,40 @@ Foi construído com **HTML5**, **CSS3** e **JavaScript puro (Vanilla JS)**, segu
 
 A arquitetura do projeto evoluiu para um modelo híbrido. A página inicial, blog e portfólio utilizam o `data.js` para renderização dinâmica, enquanto as páginas de serviço são **estáticas** (`.html` individuais) para melhor performance, SEO individualizado e foco na conversão de e-books.
 
-nexus-innova/ │ ├── index.html # Página principal (Home) ├── blog.html # Listagem de posts do blog │ ├── bi-ux.html # Página estática do serviço de BI e UX ├── full-stack.html # Página estática do serviço de Full Stack ├── qa.html # Página estática do serviço de QA ├── suporte-sites.html # Página estática do serviço de Suporte a Sites ├── suporte-juridico.html # Página estática do serviço Jurídico ├── automacao.html # Página estática do serviço de Automação │ ├── style.css # Estilos globais ├── script.js # Lógica principal (injeção de header/footer, chatbot, quiz, etc.) ├── data.js # Dados centralizados (para blog, equipe, chatbot, etc.) ├── salvar_contato.php # Backend para processamento de formulários de projeto │ ├── blog/ │ └── post.html # Template de post individual (dinâmico) │ ├── projetos/ │ └── projeto.html # Template de projeto individual (dinâmico) │ ├── images/ # Imagens globais (logos, hero, favicons) │ └── membros/ # Fotos da equipe │ ├── blog/images/ # Imagens dos posts do blog │ ├── projetos/images/ # Imagens dos projetos │ ├── covers/ # Imagens das capas dos e-books │ └── documentos/ ├── ebook-bi-ux.pdf # Exemplo de E-book └── videos/ # Vídeos locais (atualmente comentados no código)
+nexus-innova/
+│
+├── index.html              # Página principal (Home)
+├── blog.html               # Listagem de posts do blog
+│
+├── bi-ux.html              # Página estática do serviço de BI e UX
+├── full-stack.html         # Página estática do serviço de Full Stack
+├── qa.html                 # Página estática do serviço de QA
+├── suporte-sites.html      # Página estática do serviço de Suporte a Sites
+├── suporte-juridico.html   # Página estática do serviço Jurídico
+├── automacao.html          # Página estática do serviço de Automação
+│
+├── style.css               # Estilos globais
+├── script.js               # Lógica principal (injeção de header/footer, chatbot, quiz, etc.)
+├── data.js                 # Dados centralizados (para blog, equipe, chatbot, etc.)
+├── salvar_contato.php      # Backend para processamento de formulários de projeto
+│
+├── blog/
+│   └── post.html           # Template de post individual (dinâmico)
+│
+├── projetos/
+│   └── projeto.html        # Template de projeto individual (dinâmico)
+│
+├── images/                 # Imagens globais (logos, hero, favicons)
+│   └── membros/            # Fotos da equipe
+│
+├── blog/images/            # Imagens dos posts do blog
+│
+├── projetos/images/        # Imagens dos projetos
+│
+├── covers/                 # Imagens das capas dos e-books
+│
+└── documentos/
+    ├── ebook-bi-ux.pdf     # Exemplo de E-book
 
 ## ⚡ Funcionalidades
 
