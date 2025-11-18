@@ -2,16 +2,16 @@
 const siteData = {
     // Dados para o Header e Footer
     navigation: [
-        { name: "Início", link: "/index.html#home" },
-        { name: "Sobre", link: "/index.html#about" },
-        { name: "Serviços", link: "/index.html#services" },
-        { name: "Projetos", link: "/index.html#projects" },
-        { name: "Blog", link: "/blog.html" },
-        { name: "Contato", link: "/index.html#contact" },
+        { name: "Início", link: "index.html#home" },
+        { name: "Sobre", link: "index.html#about" },
+        { name: "Serviços", link: "index.html#services" },
+        { name: "Projetos", link: "index.html#projects" },
+        { name: "Blog", link: "blog.html" },
+        { name: "Contato", link: "index.html#contact" },
     ],
     logos: {
-        main: "/images/logo.png",
-        scrolled: "/images/logo-nexus-white.png"
+        main: "images/logo.png",
+        scrolled: "images/logo-nexus-white.png"
     },
     footer: {
         tagline: "Inovação digital para o seu negócio.",
@@ -19,9 +19,7 @@ const siteData = {
         email: "contato@nexusinnova.com.br",
         phone: "+55 (85) 9 9826-1414",
         social: {
-            linkedin: "https://www.linkedin.com/in/felipesalvim/",
             instagram: "https://www.instagram.com/nexus_innova",
-            facebook: "#",
             whatsapp: "5585998261414"
         }
     },
@@ -129,7 +127,7 @@ services: [
         {
             id: 'projeto-nexus-innova',
             title: 'Website Institucional Nexus Innova',
-            image: '/projetos/images/projeto-nexus-innova.png',
+            image: 'projetos/images/projeto-nexus-innova.png',
             description: 'Desenvolvimento completo do website da Nexus Innova, utilizando HTML, CSS e JavaScript puros para criar uma experiência de usuário dinâmica.',
             status: 'Concluído',
             technologies: ['HTML', 'CSS', 'JavaScript'],
@@ -137,14 +135,14 @@ services: [
                 challenge: "Criar um portal digital que representasse a identidade da empresa júnior, comunicasse seus serviços e funcionasse como um ponto de contato e portfólio.",
                 solution: "Desenvolvemos um site de página única com seções bem definidas, carregamento dinâmico de conteúdo via JavaScript e um design moderno alinhado à marca da Nexus Innova.",
                 results: "O resultado é uma plataforma profissional e ágil que serve como a principal ferramenta de marketing e comunicação da empresa, com todas as informações facilmente acessíveis.",
-                projectImage: "/projetos/images/projeto-nexus-innova.png",
+                projectImage: "projetos/images/projeto-nexus-innova.png",
                 liveUrl: "https://www.nexusinnova.com.br/",
             }
         },
         {
             id: 'sistema-gestao-tarefas',
             title: 'Sistema de Gestão de Tarefas',
-            image: '/projetos/images/sistema-gestao-tarefas.png',
+            image: 'projetos/images/sistema-gestao-tarefas.png',
             description: 'Uma plataforma para organizar e gerenciar tarefas de equipes, com foco em metodologias ágeis e colaboração em tempo real.',
             status: 'Em Andamento',
             technologies: ['React', 'Node.js', 'Firebase'],
@@ -152,14 +150,14 @@ services: [
                 challenge: "Desenvolver uma ferramenta intuitiva que permita a criação, atribuição e acompanhamento de tarefas de forma eficiente, superando a complexidade de softwares de gestão.",
                 solution: "A solução proposta é uma aplicação web com interface reativa construída em React, comunicação em tempo real e um backend robusto em Node.js para gerenciar a lógica de negócio.",
                 results: "Espera-se que a plataforma aumente a produtividade das equipes, centralizando a comunicação e oferecendo uma visão clara do andamento de cada projeto.",
-                projectImage: "/projetos/images/sistema-gestao-tarefas.png",
+                projectImage: "projetos/images/sistema-gestao-tarefas.png",
                 liveUrl: null,
             }
         },
         {
             id: 'dashboard-ecommerce-bi',
             title: 'Dashboard de Performance de E-commerce',
-            image: '/projetos/images/dashboard-ecommerce-bi.png',
+            image: 'projetos/images/dashboard-ecommerce-bi.png',
             description: 'Criação de um painel de Business Intelligence para análise de vendas, comportamento de clientes e otimização de campanhas de marketing.',
             status: 'Em Andamento',
             technologies: ['Power BI', 'Google Analytics', 'SQL'],
@@ -167,14 +165,14 @@ services: [
                 challenge: "O cliente precisava de uma visão unificada dos seus dados de vendas e marketing, que estavam espalhados por diversas planilhas e plataformas.",
                 solution: "Consolidamos todas as fontes de dados em um único dashboard interativo no Power BI, permitindo filtros dinâmicos por período, produto e perfil de cliente.",
                 results: "A empresa obteve insights que levaram a um aumento de 20% na taxa de conversão e uma otimização de 15% nos gastos com anúncios.",
-                projectImage: "/projetos/images/dashboard-ecommerce-bi.png",
+                projectImage: "projetos/images/dashboard-ecommerce-bi.png",
                 liveUrl: null,
             }
         },
         {
             id: 'automacao-relatorios-financeiros',
             title: 'Robô para Automação de Relatórios',
-            image: '/projetos/images/automacao-relatorios-financeiros.png',
+            image: 'projetos/images/automacao-relatorios-financeiros.png',
             description: 'Desenvolvimento de um robô (RPA) que coleta dados de múltiplas fontes, consolida as informações e gera relatórios financeiros mensais automaticamente.',
             status: 'Em Andamento',
             technologies: ['Python', 'Pandas', 'Selenium'],
@@ -182,14 +180,14 @@ services: [
                 challenge: "A equipe financeira gastava mais de 40 horas por mês em tarefas manuais e repetitivas para compilar relatórios, o que gerava atrasos e erros.",
                 solution: "Criamos um script de automação que executa a coleta, limpeza e formatação dos dados de forma agendada, enviando o relatório finalizado por e-mail para os gestores.",
                 results: "O tempo gasto na geração de relatórios foi reduzido em 99%, eliminando erros manuais e liberando a equipe para focar em análises estratégicas.",
-                projectImage: "/projetos/images/automacao-relatorios-financeiros.png",
+                projectImage: "projetos/images/automacao-relatorios-financeiros.png",
                 liveUrl: null,
             }
         },
         {
             id: 'consultoria-testes-qa',
             title: 'Consultoria de Testes (QA) para App Financeiro',
-            image: '/projetos/images/consultoria-testes-qa.png',
+            image: 'projetos/images/consultoria-testes-qa.png',
             description: 'Planejamento e execução de um ciclo completo de testes de qualidade para garantir a segurança e a estabilidade de um aplicativo financeiro antes do seu lançamento.',
             status: 'Em Andamento',
             technologies: ['Cypress', 'Jira', 'Testes de API'],
@@ -197,14 +195,14 @@ services: [
                 challenge: "Garantir que o aplicativo estivesse livre de bugs críticos e vulnerabilidades de segurança que pudessem comprometer os dados dos usuários.",
                 solution: "Realizamos testes de funcionalidade, usabilidade, performance e segurança, documentando todos os cenários e bugs encontrados na plataforma Jira para a equipe de desenvolvimento.",
                 results: "Foram identificadas e corrigidas 12 vulnerabilidades críticas antes do lançamento, garantindo a confiança do usuário e a conformidade do app com as normas do setor.",
-                projectImage: "/projetos/images/consultoria-testes-qa.png",
+                projectImage: "projetos/images/consultoria-testes-qa.png",
                 liveUrl: null,
             }
         },
         {
             id: 'suporte-manutencao-loja',
             title: 'Plano de Suporte e Manutenção para Loja Online',
-            image: '/projetos/images/suporte-manutencao-loja.png',
+            image: 'projetos/images/suporte-manutencao-loja.png',
             description: 'Contrato de suporte técnico contínuo para um e-commerce, incluindo monitoramento de uptime, backups de segurança, atualizações e otimizações de performance.',
             status: 'Em Andamento',
             technologies: ['WooCommerce', 'WordPress', 'Monitoramento'],
@@ -212,14 +210,14 @@ services: [
                 challenge: "O cliente sofria com a instabilidade do site e a falta de um parceiro técnico para resolver problemas urgentes, o que resultava em perda de vendas.",
                 solution: "Implementamos um sistema de monitoramento 24/7 e uma rotina de backups diários. Oferecemos um canal de suporte direto para resolver rapidamente qualquer problema técnico.",
                 results: "O tempo de inatividade (downtime) do site foi reduzido a zero, e a velocidade de carregamento das páginas melhorou em 40%, aumentando a satisfação do cliente.",
-                projectImage: "/projetos/images/suporte-manutencao-loja.png",
+                projectImage: "projetos/images/suporte-manutencao-loja.png",
                 liveUrl: null,
             }
         },
         {
             id: 'consultoria-lgpd',
             title: 'Consultoria e Adequação à LGPD',
-            image: '/projetos/images/consultoria-lgpd.png',
+            image: 'projetos/images/consultoria-lgpd.png',
             description: 'Serviço de consultoria para mapear o tratamento de dados pessoais de uma empresa, revisar documentos e garantir a conformidade com a Lei Geral de Proteção de Dados.',
             status: 'Em Andamento',
             technologies: ['LGPD', 'Direito Digital', 'Segurança da Informação'],
@@ -227,7 +225,7 @@ services: [
                 challenge: "A empresa precisava se adequar à LGPD para evitar multas e construir uma relação de confiança com seus clientes, mas não sabia por onde começar.",
                 solution: "Realizamos uma auditoria completa, criamos uma Política de Privacidade personalizada, revisamos os Termos de Uso e treinamos a equipe sobre as melhores práticas de tratamento de dados.",
                 results: "A empresa está 100% em conformidade com a LGPD, utilizando a adequação como um diferencial competitivo no mercado.",
-                projectImage: "/projetos/images/consultoria-lgpd.png",
+                projectImage: "projetos/images/consultoria-lgpd.png",
                 liveUrl: null,
             }
         }
@@ -303,7 +301,7 @@ services: [
             id: 'lgpd-para-empresas',
             title: 'Guia Essencial de LGPD para Empresas',
             description: 'Entenda o que é a LGPD e como sua empresa pode se adequar sem complicação.',
-            image: '/blog/images/post-lgpd.png',
+            image: 'blog/images/post-lgpd.png',
             date: '18 de setembro, 2025',
             tags: ['Cibersegurança', 'Proteção de Dados'],
             content: `
@@ -324,7 +322,7 @@ services: [
             id: 'automacao-negocio',
             title: 'Como a Automação pode Salvar seu Negócio',
             description: 'Descubra 5 processos simples que você pode automatizar para aumentar a produtividade.',
-            image: '/blog/images/post-automacao.png',
+            image: 'blog/images/post-automacao.png',
             date: '19 de setembro, 2025',
             tags: ['Automação', 'Produtividade', 'Eficiência'],
             content: `
@@ -351,7 +349,7 @@ services: [
             id: 'startup-mvp',
             title: 'Por que sua Startup precisa de um MVP?',
             description: 'Conheça a importância de um Produto Mínimo Viável e como ele acelera seu lançamento.',
-            image: '/blog/images/post-mvp.png',
+            image: 'blog/images/post-mvp.png',
             date: '20 de setembro, 2025',
             tags: ['Startup', 'MVP', 'Desenvolvimento'],
             content: `
@@ -377,7 +375,7 @@ services: [
             id: 'bi-para-pequenas-empresas',
             title: 'BI para Pequenas Empresas: Como Começar',
             description: 'Descubra como o Business Intelligence pode ser usado para impulsionar o crescimento do seu negócio.',
-            image: '/blog/images/post-bi-pequenas-empresas.png',
+            image: 'blog/images/post-bi-pequenas-empresas.png',
             date: '21 de setembro, 2025',
             tags: ['BI', 'Análise de Dados', 'Pequenas Empresas'],
             content: `
@@ -402,7 +400,7 @@ services: [
             id: 'frontend-vs-backend',
             title: 'FrontEnd vs. BackEnd: Qual a Diferença?',
             description: 'Entenda a divisão do desenvolvimento de software e como eles se unem para criar uma aplicação completa.',
-            image: '/blog/images/post-fullstack.png',
+            image: 'blog/images/post-fullstack.png',
             date: '22 de setembro, 2025',
             tags: ['Desenvolvimento', 'Full Stack', 'Programação'],
             content: `
@@ -423,7 +421,7 @@ services: [
             id: 'importancia-qa',
             title: 'A Importância da Qualidade de Software (QA)',
             description: 'Qualidade de software não é um luxo, é uma necessidade. Saiba por que investir em QA é crucial.',
-            image: '/blog/images/post-qualidade-software.png',
+            image: 'blog/images/post-qualidade-software.png',
             date: '23 de setembro, 2025',
             tags: ['QA', 'Qualidade de Software', 'Testes'],
             content: `
@@ -448,7 +446,7 @@ services: [
             id: 'suporte-ecommerce',
             title: 'Como um Bom Suporte Salva seu E-commerce',
             description: 'Problemas técnicos podem custar vendas. Entenda como o suporte proativo garante que seu e-commerce esteja sempre no ar.',
-            image: '/blog/images/post-suporte-site.png',
+            image: 'blog/images/post-suporte-site.png',
             date: '24 de setembro, 2025',
             tags: ['Suporte', 'E-commerce', 'Manutenção'],
             content: `
@@ -473,7 +471,7 @@ services: [
             id: 'ux-nao-e-apenas-design',
             title: 'UX não é Apenas Design: A Estratégia por Trás',
             description: 'Entenda como uma boa experiência do usuário (UX) vai além da estética e se torna uma ferramenta de crescimento.',
-            image: '/blog/images/post-ux-design.png',
+            image: 'blog/images/post-ux-design.png',
             date: '25 de setembro, 2025',
             tags: ['UX', 'Design', 'Estratégia'],
             content: `
@@ -498,7 +496,7 @@ services: [
             id: 'seguranca-cibernetica-lgpd',
             title: 'Segurança Cibernética na Era da LGPD',
             description: 'A LGPD tornou a segurança de dados uma prioridade. Saiba como proteger seu negócio de ataques.',
-            image: '/blog/images/post-seguranca-ciber.png',
+            image: 'blog/images/post-seguranca-ciber.png',
             date: '26 de setembro, 2025',
             tags: ['Segurança', 'LGPD', 'Cibersegurança'],
             content: `
@@ -523,7 +521,7 @@ services: [
             id: 'estrategia-tecnologia-negocio',
             title: 'Como Alinhar Tecnologia e Estratégia de Negócio',
             description: 'A tecnologia é uma ferramenta, não um fim. Aprenda a usar a T.I. de forma estratégica para alcançar seus objetivos.',
-            image: '/blog/images/post-tecnologia-estrategia.png',
+            image: 'blog/images/post-tecnologia-estrategia.png',
             date: '27 de setembro, 2025',
             tags: ['Consultoria', 'Estratégia', 'Inovação'],
             content: `

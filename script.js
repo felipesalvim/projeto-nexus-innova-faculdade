@@ -63,7 +63,7 @@ function injectHeaderAndFooter() {
         </header>
     `;
 
-    const footerHTML = `
+const footerHTML = `
         <footer>
             <div class="container footer-grid">
                 <div class="footer-col">
@@ -72,9 +72,7 @@ function injectHeaderAndFooter() {
                     </div>
                     <p class="tagline">${siteData.footer.tagline}</p>
                     <div class="social-links">
-                        <a href="${siteData.footer.social.linkedin}" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
                         <a href="${siteData.footer.social.instagram}" title="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-                        <a href="${siteData.footer.social.facebook}" title="Facebook" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://wa.me/${siteData.footer.social.whatsapp}" title="WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
@@ -84,10 +82,11 @@ function injectHeaderAndFooter() {
                         ${siteData.navigation.map(item => `<li><a href="${item.link}">${item.name}</a></li>`).join('')}
                     </ul>
                 </div>
+                
                 <div class="footer-col">
                     <h3>Serviços</h3>
                     <ul>
-                        ${siteData.services.map(service => `<li><a href="/index.html#services">${service.title}</a></li>`).join('')}
+                        ${siteData.services.map(service => `<li><a href="${service.id}.html">${service.title}</a></li>`).join('')}
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -199,14 +198,13 @@ function createBlogPostCardHTML(post, pathPrefix = '') {
 function renderServicesSection() {
     const servicesGrid = document.getElementById('services-grid');
     if (servicesGrid) {
-        // MODIFICADO: O botão agora leva para a PÁGINA HTML específica
         servicesGrid.innerHTML = siteData.services.map((service, index) => `
             <div class="service-card" data-aos="fade-up" data-aos-delay="${index * 100}">
                 <div class="service-icon"><i class="${service.icon}"></i></div>
                 <h3>${service.title}</h3>
                 <p>${service.description}</p>
                 
-                <a href="/${service.id}.html" class="service-details-btn">
+                <a href="${service.id}.html" class="service-details-btn">
                     <i class="fas fa-plus"></i> Saiba Mais
                 </a>
             </div>
@@ -346,7 +344,7 @@ function renderHighlightedProjects() {
                     <div class="project-technologies">
                         ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
                     </div>
-                    <a href="projetos/projeto.html?id=${project.id}" class="cta-button">Conheça o projeto</a>
+                        <a href="projetos/projeto.html?id=${project.id}" class="cta-button">Conheça o projeto</a>
                 </div>
             </div>`;
         }).join('');
