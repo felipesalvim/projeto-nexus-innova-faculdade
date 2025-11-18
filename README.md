@@ -1,29 +1,3 @@
-Excelente pergunta. Analisei a estrutura de arquivos da sua imagem (`image_09658c.png`) com cuidado.
-
-Antes de te entregar o README final, vamos fazer a **limpeza** que você sugeriu. Sim, existem arquivos que **devem** ser excluídos, principalmente por questões de segurança.
-
-### 🗑️ O que você deve EXCLUIR (Limpeza)
-
-Esses arquivos foram scripts utilitários que criamos apenas para "consertar" o banco de dados ou criar o primeiro usuário. Mantê-los no servidor é um **risco de segurança gravíssimo**, pois qualquer pessoa que acessar a URL poderia resetar a senha do administrador.
-
-1.  ❌ **`criar_admin.php`**: Exclua imediatamente. O usuário já está criado.
-2.  ❌ **`reset_senha.php`**: Exclua imediatamente. A senha já foi corrigida.
-
-### ⚠️ O que você PODE excluir (Opcional)
-
-1.  ⚠️ **`projetos/projeto.html`**:
-      * Este arquivo era o template estático antigo. Agora, o sistema usa o **`projeto_detalhe.php`** (que está na raiz) para gerar as páginas de projeto dinamicamente.
-      * **Recomendação:** Pode excluir o arquivo `projeto.html`, mas **mantenha a pasta** `projetos/images`, pois as imagens dos projetos ainda estão lá.
-
------
-
-### 📄 O Novo README.md (Completo e Profissional)
-
-Agora que limpamos a casa, aqui está o `README.md` definitivo. Ele foi reescrito para refletir o status de **Sistema Web Completo**, destacando o Painel Administrativo, o Banco de Dados e a Arquitetura Híbrida.
-
-Copie o código abaixo e substitua todo o conteúdo do seu arquivo `README.md`.
-
-````markdown
 # Sistema Web Institucional - Nexus Innova
 
 <p align="center">
