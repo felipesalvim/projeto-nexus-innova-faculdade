@@ -1,284 +1,59 @@
 # Website Institucional - Nexus Innova
 
-\<p align="center"\>
-\<img src="/images/captura-site.png" alt="Banner do Projeto Nexus Innova" width="1000"/\>
-\</p\>
+<p align="center">
+<img src="images/captura-site.png" alt="Banner do Projeto Nexus Innova" width="1000"/>
+</p>
 
 ## 📋 Índice
 
-  - [🎯 Sobre o Projeto](#-sobre-o-projeto)
-  - [🚀 Tecnologias Utilizadas](#-tecnologias-utilizadas)
-  - [📁 Estrutura do Projeto](#-estrutura-do-projeto)
-  - [⚡ Funcionalidades](#-funcionalidades)
-  - [🏗️ Arquitetura e Padrões](#️-arquitetura-e-padrões)
-  - [🛠️ Instalação e Configuração](#️-instalação-e-configuração)
-  - [💻 Uso](#-uso)
-  - [🔍 SEO e Analytics](#-seo-e-analytics)
-  - [♿ Acessibilidade](#-acessibilidade)
-  - [🔒 Segurança](#-segurança)
-  - [🤝 Contribuindo](#-contribuindo)
-  - [📄 Licença](#-licença)
-  - [📞 Contato](#-contato)
+- [🎯 Sobre o Projeto](#-sobre-o-projeto)
+- [🚀 Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [📁 Estrutura do Projeto](#-estrutura-do-projeto)
+- [⚡ Funcionalidades](#-funcionalidades)
+- [🏗️ Arquitetura e Padrões](#️-arquitetura-e-padrões)
+- [🛠️ Instalação e Configuração](#️-instalação-e-configuração)
+- [💻 Uso](#-uso)
+- [🔍 SEO e Analytics](#-seo-e-analytics)
+- [♿ Acessibilidade](#-acessibilidade)
+- [🔒 Segurança](#-segurança)
+- [🤝 Contribuindo](#-contribuindo)
+- [📄 Licença](#-licença)
+- [📞 Contato](#-contato)
 
 ## 🎯 Sobre o Projeto
 
-O **"Nexus Innova"** é um website institucional desenvolvido como parte de um projeto de extensão acadêmico. Nascido no ambiente acadêmico, o projeto tem como foco unir a vanguarda do conhecimento em tecnologia com as reais necessidades do mercado.
+O **"Nexus Innova"** é um website institucional desenvolvido como parte de um projeto de extensão acadêmico da **Faculdade CDL**. Nascido no ambiente acadêmico, o projeto atua como um laboratório prático, unindo a teoria à prática de mercado para simular uma empresa de tecnologia real.
 
 Foi construído com **HTML5**, **CSS3** e **JavaScript puro (Vanilla JS)**, seguindo princípios modernos de desenvolvimento web, com foco em performance, acessibilidade e experiência do usuário.
 
 ### Objetivos
 
-  - Apresentar os "serviços" do projeto de forma clara e profissional.
-  - Criar um "portfólio interativo" de projetos desenvolvidos.
-  - Estabelecer um "canal de comunicação" eficiente com potenciais clientes e parceiros.
-  - Compartilhar conhecimento através de um "blog técnico".
-  - Gerar leads qualificados através de "materiais educativos (e-books)" e "quiz interativo".
+- Apresentar os "serviços" do projeto de forma clara e profissional.
+- Criar um "portfólio interativo" de projetos desenvolvidos.
+- Estabelecer um "canal de comunicação" eficiente com potenciais clientes e parceiros.
+- Compartilhar conhecimento através de um "blog técnico".
+- Gerar leads qualificados através de "materiais educativos (e-books)" e "quiz interativo".
 
 ## 🚀 Tecnologias Utilizadas
 
 ### Frontend
 
-  - **HTML5**: Estrutura "semântica" e acessível.
-  - **CSS3**: Estilização moderna com "variáveis CSS", "Grid" e "Flexbox".
-  - **JavaScript (ES6+)**: Lógica de aplicação "sem frameworks" para injeção de componentes (header/footer) e interatividade.
-  - **AOS (Animate On Scroll)**: Animações suaves durante o scroll.
-  - **Font Awesome**: Biblioteca de ícones.
+- **HTML5**: Estrutura "semântica" e acessível.
+- **CSS3**: Estilização moderna com "variáveis CSS", "Grid" e "Flexbox".
+- **JavaScript (ES6+)**: Lógica de aplicação "sem frameworks" para injeção de componentes (header/footer) e interatividade.
+- **AOS (Animate On Scroll)**: Animações suaves durante o scroll.
+- **Font Awesome**: Biblioteca de ícones.
 
 ### Backend
 
-  - **PHP 7.4+**: Processamento de formulários (especificamente para a página de detalhes do projeto).
-  - **MySQL**: Armazenamento de dados de contato oriundos dos projetos.
+- **PHP 7.4+**: Processamento de formulários (especificamente para a página de detalhes do projeto).
+- **MySQL**: Armazenamento de dados de contato oriundos dos projetos.
 
 ### Analytics & Marketing
 
-  - **Google Tag Manager (GTM)**: Gerenciamento centralizado de tags de marketing e análise.
-  - **Google Analytics (GA4)**: Monitoramento de tráfego e comportamento do usuário.
+- **Google Tag Manager (GTM)**: Gerenciamento centralizado de tags de marketing e análise.
+- **Google Analytics (GA4)**: Monitoramento de tráfego e comportamento do usuário.
 
 ## 📁 Estrutura do Projeto
 
-A arquitetura do projeto evoluiu para um modelo híbrido. A página inicial, blog e portfólio ainda utilizam o `data.js` para renderização dinâmica, enquanto as páginas de serviço são **estáticas** (`.html` individuais) para melhor performance, SEO e foco na conversão.
-
-```
-nexus-innova/
-│
-├── index.html              # Página principal (Home)
-├── blog.html               # Listagem de posts do blog
-│
-├── bi-ux.html              # Página estática do serviço de BI e UX
-├── full-stack.html         # Página estática do serviço de Full Stack
-├── qa.html                 # Página estática do serviço de QA
-├── suporte-sites.html      # Página estática do serviço de Suporte a Sites
-├── suporte-juridico.html   # Página estática do serviço Jurídico
-├── automacao.html          # Página estática do serviço de Automação
-│
-├── style.css               # Estilos globais
-├── script.js               # Lógica principal (injeção de header/footer, chatbot, quiz, etc.)
-├── data.js                 # Dados centralizados (para blog, equipe, chatbot, etc.)
-├── salvar_contato.php      # Backend para processamento de formulários de projeto
-│
-├── blog/
-│   └── post.html           # Template de post individual (dinâmico)
-│
-├── projetos/
-│   └── projeto.html        # Template de projeto individual (dinâmico)
-│
-├── images/                 # Imagens globais (logos, hero, favicons)
-│   └── membros/            # Fotos da equipe
-│
-├── blog/images/            # Imagens dos posts do blog
-│
-├── projetos/images/        # Imagens dos projetos
-│
-├── covers/                 # Imagens das capas dos e-books
-│
-└── documentos/
-    ├── ebook-bi-ux.pdf     # Exemplo de E-book
-```
-
-## ⚡ Funcionalidades
-
-1.  **"Navegação Responsiva"**
-
-      - Menu hambúrguer para dispositivos móveis.
-      - Header fixo com efeito de transparência ao rolar.
-
-2.  **"Páginas de Serviço Estáticas"**
-
-      - Seis páginas de serviço individuais (`bi-ux.html`, `full-stack.html`, etc.).
-      - Foco principal na "conversão de leads" através do download de e-books.
-      - Seção de vídeo "comentada", pronta para reativação futura.
-      - Layout responsivo que ajusta a apresentação do vídeo (vertical) e do e-book.
-
-3.  **"Sistema de Blog (Dinâmico)"**
-
-      - Renderização de posts a partir do `data.js`.
-      - Listagem de posts com busca em tempo real.
-      - Posts individuais com SEO otimizado e dados estruturados (JSON-LD).
-
-4.  **"Portfólio de Projetos (Dinâmico)"**
-
-      - Renderização de projetos a partir do `data.js`.
-      - Detalhamento completo com seções "Desafio", "Solução" e "Resultados".
-      - Formulário de contato "Interessado neste projeto?" com validação e backend em PHP.
-
-5.  **"Quiz Interativo de Contato"**
-
-      - Sistema de qualificação de leads por etapas na seção de contato.
-      - Redirecionamento automático para WhatsApp com mensagens contextualizadas.
-
-6.  **"Chatbot Flutuante"**
-
-      - Assistente virtual com fluxo conversacional definido no `data.js`.
-      - Coleta de informações (nome, email) e direcionamento para especialistas.
-
-7.  **"Componentes de Contato"**
-
-      - Botão flutuante do WhatsApp com texto expansível.
-      - Formulários com validação *client-side* (JavaScript).
-      - Proteção contra "SQL Injection" no *backend* (PHP).
-
-## 🏗️ Arquitetura e Padrões
-
-### Princípios de Design
-
-  - **"DRY (Don't Repeat Yourself)"**
-      - Componentes reutilizáveis (Header, Footer, Botão WhatsApp) são injetados em todas as páginas via `script.js`.
-      - Dados para seções dinâmicas (blog, equipe, chatbot, projetos) são centralizados em `data.js`.
-      - Templates únicos para posts e projetos.
-  - **"Separation of Concerns"**
-      - **HTML** para estrutura semântica.
-      - **CSS** para apresentação visual.
-      - **JavaScript** para comportamento e interatividade.
-      - **PHP** para lógica de servidor.
-  - **"Mobile-First"**
-      - Design responsivo com *breakpoints* estratégicos.
-      - Imagens otimizadas com `loading="lazy"`.
-
-### Organização do Código JavaScript
-
-```javascript
-// Estrutura modular em script.js
-// 1. Variáveis Globais
-// 2. Funções Principais (Navegação, Injeção de Header/Footer)
-// 3. Funções de Otimização (SEO para páginas dinâmicas)
-// 4. Funções de Renderização (para blog, projetos, equipe, etc.)
-// 5. Lógica de Formulários (Validação JS)
-// 6. Sistema de Quiz
-// 7. Sistema de Chatbot
-// 8. Event Listeners & Initialization (Roteador simples)
-```
-
-## 🛠️ Instalação e Configuração
-
-### Pré-requisitos
-
-  - Servidor web (Apache, Nginx, ou um plugin como "Live Server" do VS Code para desenvolvimento).
-  - PHP 7.4 ou superior (Necessário *apenas* para o formulário da página de projeto).
-  - MySQL 5.7 ou superior (Necessário *apenas* para o formulário da página de projeto).
-
-### Configuração do Banco de Dados (Opcional)
-
-Este passo é necessário apenas para o formulário "Interessado neste projeto?" nas páginas de detalhes do projeto.
-
-1.  Crie o banco de dados:
-    ```sql
-    CREATE DATABASE nexus_innova_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-    ```
-2.  Crie a tabela de contatos:
-    ```sql
-    USE nexus_innova_db;
-
-    CREATE TABLE contatos_projetos (
-        id INT AUTO_INCREMENT PRIMARY KEY,
-        nome VARCHAR(255) NOT NULL,
-        telefone VARCHAR(20),
-        email VARCHAR(255) NOT NULL,
-        projeto_id VARCHAR(100) NOT NULL,
-        data_contato TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-    ```
-3.  Configure as credenciais em `salvar_contato.php`:
-    ```php
-    $servername = "localhost";
-    $username = "seu_usuario";
-    $password = "sua_senha";
-    $dbname = "nexus_innova_db";
-    ```
-
-## 💻 Uso
-
-### Adicionando Novo Post ao Blog (Dinâmico)
-
-Edite `data.js` e adicione ao array `blogPosts`:
-
-```javascript
-{
-    id: 'slug-do-post',
-    title: 'Título do Post',
-    description: 'Descrição breve',
-    image: '/blog/images/imagem.png',
-    // ... resto dos dados
-}
-```
-
-### Adicionando Novo Projeto (Dinâmico)
-
-Edite `data.js` e adicione ao array `highlightedProjects`:
-
-```javascript
-{
-    id: 'slug-do-projeto',
-    title: 'Nome do Projeto',
-    image: '/projetos/images/projeto.png',
-    // ... resto dos dados
-}
-```
-
-### Editando uma Página de Serviço (Estático)
-
-Para editar uma página de serviço (ex: `bi-ux.html`), **edite o arquivo HTML correspondente diretamente**. O conteúdo (texto, links de e-book, vídeos) é gerenciado dentro do próprio arquivo HTML, não pelo `data.js`.
-
-## 🔍 SEO e Analytics
-
-  - **"Meta Tags Estáticas"**: Título e descrição otimizados em todas as páginas estáticas (index, serviços).
-  - **"Meta Tags Dinâmicas"**: Título, descrição, Open Graph e Twitter Cards únicos para páginas de blog e projeto, preenchidos via `script.js`.
-  - **"Dados Estruturados"**: Schema.org JSON-LD para posts de blog.
-  - **"Analytics"**: Integração completa com Google Tag Manager (GTM) e Google Analytics 4 (GA4) em todas as páginas.
-
-## ♿ Acessibilidade
-
-  - **"HTML Semântico"**: Uso correto de tags como `<header>`, `<main>`, `<article>` e `<nav>`.
-  - **"Navegação Acessível"**: Funcionalidade via teclado e contraste de cores adequado (WCAG 2.1).
-  - **"Atributos Essenciais"**: `alt` em imagens e `labels` em formulários.
-
-## 🔒 Segurança
-
-  - **"Backend (PHP)"**: Uso de "Prepared Statements" (`bind_param`) em `salvar_contato.php` para proteção total contra SQL Injection.
-  - **"Frontend"**: Validação de formulários no lado do cliente para feedback imediato ao usuário.
-
-## 🤝 Contribuindo
-
-Contribuições são bem-vindas\! Para contribuir:
-
-1.  **"Fork"** o projeto
-2.  Crie uma **"Branch"** para sua feature (`git checkout -b feature/NovaFuncionalidade`)
-3.  **"Commit"** suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
-4.  **"Push"** para a branch (`git push origin feature/NovaFuncionalidade`)
-5.  Abra um **"Pull Request"**
-
-## 📄 Licença
-
-Este projeto é parte integrante do projeto de extensão **"Nexus Innova"**.
-
-## 📞 Contato
-
-**Nexus Innova**
-
-  - **Repositório Github:** [https://github.com/felipesalvim/projeto-nexus-innova](https://github.com/felipesalvim/projeto-nexus-innova)
-  - **Website:** [https://www.nexusinnova.com.br](https://www.nexusinnova.com.br)
-  - **Email:** contato@nexusinnova.com.br
-  - **Instagram:** @nexus_innova
-
------
-
-*Desenvolvido com 💚 pela equipe Nexus Innova*# projeto-nexus-innova-faculdade
+A arquitetura do projeto evoluiu para um modelo híbrido. A página inicial, blog e portfólio utilizam o `data.js` para renderização dinâmica, enquanto as páginas de serviço são **estáticas** (`.html` individuais) para melhor performance, SEO individualizado e foco na conversão de e-books.
