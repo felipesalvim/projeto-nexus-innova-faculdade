@@ -24,7 +24,7 @@
 
 ## 🎯 Sobre o Projeto
 
-O **Nexus Innova** é uma plataforma digital desenvolvida como parte de um projeto de extensão da **Faculdade CDL**. O sistema simula a presença digital de uma empresa de tecnologia, servindo como laboratório prático para a aplicação de conhecimentos full-stack.
+O **Nexus Innova** é uma plataforma digital desenvolvida como parte de uma disciplina da **Faculdade CDL**. O sistema simula a presença digital de uma empresa de tecnologia, servindo como laboratório prático para a aplicação de conhecimentos full-stack.
 
 O projeto evoluiu de um site estático para um **Sistema Web Dinâmico**, integrando Front-End moderno com um Back-End robusto em PHP e MySQL, permitindo o gerenciamento de conteúdo e captação de leads em tempo real.
 
@@ -134,6 +134,7 @@ nexus-innova/
 
       - Site: `http://localhost/nexus-innova`
       - Admin: `http://localhost/nexus-innova/login.html`
+      - Site hospedado (em funcionamento): `https://nexusinnova.com.br/`
 
 ## 🔐 Área Administrativa
 
